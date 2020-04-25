@@ -1,0 +1,17 @@
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+h1 {
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	margin: 2rem 0rem;
+}
+a {
+	font-size: 2rem;
+	color: blue;
+}

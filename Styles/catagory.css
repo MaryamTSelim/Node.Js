@@ -1,0 +1,63 @@
+nav {
+	height: 10vh;
+	background-color: rgb(34, 34, 34);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	font-size: 3rem;
+	letter-spacing: 0.8rem;
+	text-transform: uppercase;
+}
+.slider-container {
+	height: 90vh;
+}
+.slide {
+	width: 100%;
+	height: 90vh;
+	position: absolute;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	background-size: cover;
+}
+.slide:first-child {
+	background-color: rgb(231, 148, 114);
+	animation-name: slide1;
+}
+.slide:last-child {
+	background-color: rgb(9, 77, 60);
+	animation-name: slide2;
+}
+
+@keyframes slide1 {
+	0%,
+	45% {
+		z-index: 2;
+		left: 0%;
+	}
+	49.9% {
+		z-index: 2;
+		left: -100%;
+	}
+	50%,
+	100% {
+		z-index: 1;
+		left: 0%;
+	}
+}
+@keyframes slide2 {
+	0%,
+	50% {
+		z-index: 1;
+		left: 0%;
+	}
+	51%,
+	95% {
+		z-index: 2;
+		left: 0%;
+	}
+	100% {
+		z-index: 2;
+		left: -100%;
+	}
+}
